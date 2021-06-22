@@ -42,4 +42,5 @@ jobs:
           USE_SSH: true
         run: |
           cd my-website
-          yarn deploy
+          npm install 
+          npm run deploy
