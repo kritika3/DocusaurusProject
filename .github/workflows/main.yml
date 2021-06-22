@@ -38,8 +38,7 @@ jobs:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Release to GitHub Pages
         env:
-          USE_SSH: true
-          GIT_USER: git
+          GIT_USER: kritika3
         run: |
           git config --global user.email "kritikasharma32927@gmail.com"
           git config --global user.name "kritika3"
