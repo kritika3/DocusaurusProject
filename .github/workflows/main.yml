@@ -17,16 +17,9 @@ jobs:
           node-version: '12.x'
       - name: Test Build
         run: |
-         npm install 
-         npm install node-modules
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-          npm ci
-          else
-          npm i
-          fi
-          npm run build
+         npm install
+         npm ci
+         npm run build
   gh-release:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
