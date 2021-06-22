@@ -39,15 +39,6 @@ jobs:
       - name: Release to GitHub Pages
         env:
           GIT_USER: kritika3
+          USE_SSH: true
         run: |
-          git config --global user.email "kritikasharma32927@gmail.com"
-          git config --global user.name "kritika3"
-          cd my-website
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-          npm ci
-          else
-          npm i
-          fi
-          npm run deploy
+          yarn deploy
