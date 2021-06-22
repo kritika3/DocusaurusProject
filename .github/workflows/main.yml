@@ -41,4 +41,5 @@ jobs:
           GIT_USER: kritika3
           USE_SSH: true
         run: |
+          cd my-website
           yarn deploy
