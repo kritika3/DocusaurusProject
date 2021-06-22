@@ -1,0 +1,1 @@
+(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[656],{2707:function(e,t,n){"use strict";n.r(t);var l=n(7294),i=n(9349);t.default=function(){return l.createElement(i.Z,{title:"Hello"},l.createElement("div",{style:{display:"flex",justifyContent:"center",alignItems:"center",height:"50vh",fontSize:"20px"}},l.createElement("p",null,"Admin docs")))}}}]);
